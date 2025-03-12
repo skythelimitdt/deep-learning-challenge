@@ -3,17 +3,17 @@ The nonprofit foundation Alphabet Soup wants a tool that can help it select the 
 
 From Alphabet Soup’s business team, you have received access to a CSV containing more than 34,000 organizations that have received funding from Alphabet Soup over the years. Within this dataset are a number of columns that capture metadata about each organization, such as:
 
-EIN and NAME—Identification columns
-APPLICATION_TYPE—Alphabet Soup application type
-AFFILIATION—Affiliated sector of industry
-CLASSIFICATION—Government organization classification
-USE_CASE—Use case for funding
-ORGANIZATION—Organization type
-STATUS—Active status
-INCOME_AMT—Income classification
-SPECIAL_CONSIDERATIONS—Special considerations for application
-ASK_AMT—Funding amount requested
-IS_SUCCESSFUL—Was the money used effectively
+- EIN and NAME—Identification columns
+- APPLICATION_TYPE—Alphabet Soup application type
+- AFFILIATION—Affiliated sector of industry
+- CLASSIFICATION—Government organization classification
+- USE_CASE—Use case for funding
+- ORGANIZATION—Organization type
+- STATUS—Active status
+- INCOME_AMT—Income classification
+- SPECIAL_CONSIDERATIONS—Special considerations for application
+- ASK_AMT—Funding amount requested
+- IS_SUCCESSFUL—Was the money used effectively
 
 ## Run a Model for the Initial Dataset
 ### Data Preprocessing
@@ -36,7 +36,7 @@ IS_SUCCESSFUL—Was the money used effectively
 **Overfitting Analysis: Training vs. Validation Loss**
 The **training and validation loss chart** indicates an overfitting issue.
 
-[chart]
+![chart](https://github.com/skythelimitdt/deep-learning-challenge/blob/main/Resources/training_validation_cost.png)
 
 **Observation:** Training loss continuously decreases, showing the model is learning the training data well. Validation loss does not follow the same trend and remains high, suggesting the model is not generalizing well to unseen data.
 The model is memorizing patterns from the training data instead of learning generalized relationships, leading to poor performance on test data.
@@ -50,7 +50,7 @@ The model is memorizing patterns from the training data instead of learning gene
     4. CLASSIFICATION
     5. ORGANIZATION
 
-[random_forest]
+![random_forest](https://github.com/skythelimitdt/deep-learning-challenge/blob/main/Resources/randomforest.png)
 
 This analysis helps prioritize the most impactful variables, guiding feature selection and potential model optimization.
 
